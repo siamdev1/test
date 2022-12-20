@@ -1,0 +1,4 @@
+Research Keyframe Animation CSS
+Research Transition timing function
+Research Before After
+Create a Website using followup sections (Menubar, Hero Part, About, Service, Portfolio, contact, footer)
