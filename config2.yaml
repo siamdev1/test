@@ -1,0 +1,23 @@
+# API কন্ট্রোল সেটিংস
+external-controller: 127.0.0.1:9090
+secret: "123456"
+
+# আসল প্রক্সি সেটিংস
+proxies:
+  - name: "My-Real-Proxy"
+    type: socks5  # যদি এটি socks5 হয়, না হলে http লিখে দেখুন
+    server: change4.owlproxy.com
+    port: 7778
+    username: 6LJTUcqVXH20_custom_zone_US_st__city_sid_18766825_time_5
+    password: 2685641
+    udp: true
+
+proxy-groups:
+  - name: "Proxy"
+    type: select
+    proxies:
+      - "My-Real-Proxy"
+      - DIRECT
+
+rules:
+  - MATCH,Proxy
